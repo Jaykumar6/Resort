@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express. Router();
+const router = express.Router();
 const person = require("./../models/explore");
 
 router.post("/", async (req, res) => {
@@ -9,7 +9,7 @@ router.post("/", async (req, res) => {
     const saveperson = await newperson.save();
     console.log('data saved successfully');
     res.status(200).json({saveperson});
-  } catch (error) {
+  } catch(error) {
     console.log("error has occured");
     res.status(500).json({ error: error.message });
   }
@@ -67,7 +67,7 @@ router.delete('/:id',async (req,res) => {
         }
         console.log('data deleted successfully');
         res.status(200).json({deleteid});
-    }catch(errror){
+    }catch(error){
     console.log("error has occured");
     res.status(500).json({ error: error.message });
     }

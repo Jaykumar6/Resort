@@ -1,7 +1,6 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "license": "ISC",
   "author": "jay",
   "type": "commonjs",
@@ -12,10 +11,15 @@
   },
   "dependencies": {
     "body-parser": "^2.2.2",
+    "dotenv": "^17.2.4",
     "express": "^5.2.1",
+    "mongodb": "^7.1.0",
     "mongoose": "^9.1.6",
-    "node": "^25.6.0",
-    "nodemon": "^3.1.11",
     "prompt": "^1.3.0"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
